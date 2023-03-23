@@ -1,0 +1,28 @@
+td,
+th {
+  padding: 10px;
+}
+
+.blue {
+  background-color: #afd4f4;
+}
+
+.lime {
+  background-color: #aff4d4;
+}
+
+.light-green {
+  background-color: #e2f4af;
+}
+
+.pink {
+  background-color: #f4afed;
+}
+
+.violet {
+  background-color: #dfaff4;
+}
+
+.board { 
+      background-color: #f4afaf;
+}
