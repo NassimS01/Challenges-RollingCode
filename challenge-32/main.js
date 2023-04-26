@@ -20,8 +20,11 @@ class Barco {
 
       botinBueno(){
             const pesoTotalDelBarco = this.draft + (this.crew * 1.5)
-            const barcoSinTripulantes = pesoTotalDelBarco - (this.crew * 1.5)
-            return barcoSinTripulantes > 20;
+            if(pesoTotalDelBarco - (this.crew * 1.5) > 20) {
+                  console.log("El barco posee un gran botín, saqueenlo!!!!");
+            } else {
+                  console.log("El barco no es pesado, no lo saqueen!");
+            }
       }
 }
 
@@ -29,14 +32,3 @@ class Barco {
 const barcoVikingo = new Barco(20, 30)
 const barcoPobre = new Barco(40, 50)
 
-const esBotinBueno = nombreDelBarco => {
-      if(nombreDelBarco.botinBueno()) {
-            console.log("El barco posee un gran botín, saqueenlo!!!!")
-      } else {
-             console.log("El barco no es pesado, no lo saqueen!")
-      }
-}
-
-
-esBotinBueno(barcoVikingo)
-esBotinBueno(barcoPobre)
