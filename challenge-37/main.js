@@ -7,6 +7,8 @@ let numberRandom = Math.floor(Math.random() * 20)
 const adivinaElNumero = () => {
       if (input.value > 20 || input.value < 0) {
             alert("Debe ingresar un número entre 1 y 20")
+      } else if(isNaN(input.value)){
+      alert("Solo se pueden ingresar números")
       }
       else if(input.value < numberRandom) {
             alert("El número ingresado es menor al número mágico")
