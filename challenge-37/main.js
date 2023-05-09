@@ -16,5 +16,6 @@ const adivinaElNumero = () => {
             alert(
               `FELICIDADES! EL NÚMERO INGRESADO ES IGUAL AL NÚMERO MÁGICO!!!`
             );
+            location.reload()
       }
 }
